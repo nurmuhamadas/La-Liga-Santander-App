@@ -1,0 +1,52 @@
+header-component {
+    width: 100%;
+    padding: 16px 128px;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+}
+
+header-component img {
+    cursor: pointer;
+}
+
+header-component img,
+#header-title {
+    display: inline-block;
+}
+
+header-component img {
+    width: 36px;
+    height: 36px;
+}
+
+
+#header-title {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 24px;
+    color: white;
+}
+
+
+/* RESPONSIVE CONFIG */
+
+@media only screen and (max-width: 768px) {
+    header-component {
+        padding: 16px 64px;
+    }
+}
+
+@media only screen and (max-width: 487px) {
+    header-component {
+        padding: 16px 24px;
+    }
+
+    #header-title {
+        font-size: 16px;
+        margin-left: 12px;
+    }
+}

@@ -1,0 +1,88 @@
+board-item>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    border-radius: 24px;
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 48px;
+    padding-right: 48px;
+    cursor: pointer;
+}
+
+board-item>div ul li {
+    display: inline-block;
+    font-size: 42px;
+    font-weight: bold;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+board-item .club-logo {
+    width: 128px;
+    height: 128px;
+}
+
+board-item .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+board-item .caption {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+
+/* RESPONSIVE CONFIG */
+
+@media only screen and (max-width: 768px) {
+    board-item {
+        width: 100%;
+    }
+
+    board-item>div {
+        width: 100%;
+    }
+
+    board-item>div ul li {
+        font-size: 42px;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 487px) {
+    board-item>div {
+        width: 100%;
+        height: 125px;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-top: 16px;
+        border-radius: 8px;
+    }
+
+    board-item>div ul li {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    board-item .club-logo {
+        width: 64px;
+        height: 64px;
+    }
+
+    board-item .caption {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+}

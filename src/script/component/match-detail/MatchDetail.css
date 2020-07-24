@@ -1,0 +1,29 @@
+match-detail {
+    padding: 16px 32px;
+    display: block;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to left, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.125));
+}
+
+match-detail table tr td:nth-child(1) {
+    text-align: left;
+}
+
+match-detail table tr td:nth-child(2) {
+    text-align: right;
+}
+
+match-detail .bold {
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    match-detail {
+        width: 100%;
+    }
+}

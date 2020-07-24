@@ -1,0 +1,90 @@
+card-item {
+    position: relative;
+    display: inline-block;
+    width: 30%;
+    margin-left: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+card-item .card {
+    background-color: #ffffff00;
+    border-radius: 8px;
+    padding: 24px 24px;
+    min-height: 225px;
+}
+
+card-item .match-thumb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+card-item>div ul li {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+card-item .club-logo {
+    width: 48px;
+    height: 48px;
+}
+
+card-item .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+card-item .caption {
+    font-size: 12px;
+    max-width: 100px;
+}
+
+card-item .match-detail {
+    margin-top: 36px;
+}
+
+card-item .stadium {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* RESPONSIVE CONFIG */
+
+@media only screen and (max-width: 768px) {
+    card-item {
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 487px) {
+    card-item {
+        width: 100%;
+    }
+    card-item>div ul li {
+        font-size: 16px;
+    }
+    card-item .club-logo {
+        width: 48px;
+        height: 48px;
+    }
+    card-item .img-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    card-item .caption {
+        font-size: 12px;
+    }
+    card-item .match-detail {
+        margin-top: 36px;
+    }
+}
